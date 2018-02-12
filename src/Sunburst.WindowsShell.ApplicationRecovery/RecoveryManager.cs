@@ -5,7 +5,7 @@ namespace Sunburst.WindowsShell.ApplicationRecovery
 {
     public static class RecoveryManager
     {
-        public static bool OperatingSystemSupportPresent
+        public static bool IsPlatformSupported
         {
             get
             {
@@ -16,7 +16,7 @@ namespace Sunburst.WindowsShell.ApplicationRecovery
 
         public static void RegisterApplicationRecovery(RecoverySettings settings)
         {
-            if (!OperatingSystemSupportPresent) throw new PlatformNotSupportedException("Requires Windows Vista or later");
+            if (!IsPlatformSupported) throw new PlatformNotSupportedException("Requires Windows Vista or later");
 
             if (settings == null) throw new ArgumentNullException(nameof(settings));
 
@@ -28,7 +28,7 @@ namespace Sunburst.WindowsShell.ApplicationRecovery
 
         public static void UnregisterApplicationRecovery()
         {
-            if (!OperatingSystemSupportPresent) throw new PlatformNotSupportedException("Requires Windows Vista or later");
+            if (!IsPlatformSupported) throw new PlatformNotSupportedException("Requires Windows Vista or later");
 
             int hr = NativeMethods.UnregisterApplicationRecoveryCallback();
             if (hr != 0) Marshal.ThrowExceptionForHR(hr);
@@ -36,7 +36,7 @@ namespace Sunburst.WindowsShell.ApplicationRecovery
 
         public static bool ApplicationRecoveryInProgress()
         {
-            if (!OperatingSystemSupportPresent) throw new PlatformNotSupportedException("Requires Windows Vista or later");
+            if (!IsPlatformSupported) throw new PlatformNotSupportedException("Requires Windows Vista or later");
 
             bool cancelled = false;
             int hr = NativeMethods.ApplicationRecoveryInProgress(out cancelled);
@@ -47,14 +47,14 @@ namespace Sunburst.WindowsShell.ApplicationRecovery
 
         public static void ApplicationRecoveryFinished(bool succeeded)
         {
-            if (!OperatingSystemSupportPresent) throw new PlatformNotSupportedException("Requires Windows Vista or later");
+            if (!IsPlatformSupported) throw new PlatformNotSupportedException("Requires Windows Vista or later");
 
             NativeMethods.ApplicationRecoveryFinished(succeeded);
         }
 
         public static void RegisterApplicationRestart(string command, RestartCondition condition)
         {
-            if (!OperatingSystemSupportPresent) throw new PlatformNotSupportedException("Requires Windows Vista or later");
+            if (!IsPlatformSupported) throw new PlatformNotSupportedException("Requires Windows Vista or later");
 
             if (command == null) throw new ArgumentNullException(nameof(command));
 
@@ -64,7 +64,7 @@ namespace Sunburst.WindowsShell.ApplicationRecovery
 
         public static void UnregisterApplicationRestart()
         {
-            if (!OperatingSystemSupportPresent) throw new PlatformNotSupportedException("Requires Windows Vista or later");
+            if (!IsPlatformSupported) throw new PlatformNotSupportedException("Requires Windows Vista or later");
 
             int hr = NativeMethods.UnregisterApplicationRestart();
             if (hr != 0) Marshal.ThrowExceptionForHR(hr);
