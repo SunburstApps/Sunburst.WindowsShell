@@ -4,7 +4,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Sunburst.Win32UI.TaskDialogs
+namespace Sunburst.WindowsShell.TaskDialogs
 {
     internal static class TaskDialogNative
     {
