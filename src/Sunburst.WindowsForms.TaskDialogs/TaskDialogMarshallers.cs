@@ -5,7 +5,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace Sunburst.WindowsShell.TaskDialogs
+namespace System.Windows.Forms
 {
     internal class StringMarshaller : IDisposable
     {

@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Sunburst.WindowsShell.TaskDialogs
+namespace System.Windows.Forms
 {
     public class TaskDialog
     {

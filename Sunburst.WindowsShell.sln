@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{409E8CC1
 		src\Directory.Build.targets = src\Directory.Build.targets
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst.WindowsShell.TaskDialogs", "src\Sunburst.WindowsShell.TaskDialogs\Sunburst.WindowsShell.TaskDialogs.csproj", "{54C4CABA-6BCF-4834-8A41-E9B22EC9CCC8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "idl", "idl", "{97716E65-3772-4D2C-A292-F15863976702}"
 	ProjectSection(SolutionItems) = preProject
 		idl\PropIdl.Idl = idl\PropIdl.Idl
@@ -25,16 +23,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst.Win32.Ole", "src\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst.Win32.ApplicationRecovery", "src\Sunburst.Win32.ApplicationRecovery\Sunburst.Win32.ApplicationRecovery.csproj", "{E081FCA6-7B2B-4083-9377-ED83D1D79755}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst.WindowsForms.TaskDialogs", "src\Sunburst.WindowsForms.TaskDialogs\Sunburst.WindowsForms.TaskDialogs.csproj", "{CEA0EAAE-B322-4A80-976A-57C07C1C5D10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{54C4CABA-6BCF-4834-8A41-E9B22EC9CCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54C4CABA-6BCF-4834-8A41-E9B22EC9CCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54C4CABA-6BCF-4834-8A41-E9B22EC9CCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54C4CABA-6BCF-4834-8A41-E9B22EC9CCC8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A8D254B7-B801-47F8-94DD-B4E4C9ED31F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A8D254B7-B801-47F8-94DD-B4E4C9ED31F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D254B7-B801-47F8-94DD-B4E4C9ED31F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +39,10 @@ Global
 		{E081FCA6-7B2B-4083-9377-ED83D1D79755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E081FCA6-7B2B-4083-9377-ED83D1D79755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E081FCA6-7B2B-4083-9377-ED83D1D79755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA0EAAE-B322-4A80-976A-57C07C1C5D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA0EAAE-B322-4A80-976A-57C07C1C5D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA0EAAE-B322-4A80-976A-57C07C1C5D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA0EAAE-B322-4A80-976A-57C07C1C5D10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
