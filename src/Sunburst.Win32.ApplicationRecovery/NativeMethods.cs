@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Sunburst.WindowsShell.ApplicationRecovery
+namespace Sunburst.Win32.ApplicationRecovery
 {
     internal static class NativeMethods
     {

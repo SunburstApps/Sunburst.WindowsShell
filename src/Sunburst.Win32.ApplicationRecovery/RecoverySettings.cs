@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sunburst.WindowsShell.ApplicationRecovery
+namespace Sunburst.Win32.ApplicationRecovery
 {
     public sealed class RecoverySettings
     {

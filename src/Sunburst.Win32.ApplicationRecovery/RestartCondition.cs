@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sunburst.WindowsShell.ApplicationRecovery
+namespace Sunburst.Win32.ApplicationRecovery
 {
     [Flags]
     public enum RestartCondition
