@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Sunburst.Win32Ole.Interfaces;
+using Sunburst.Win32.Ole.Interfaces;
 
-namespace Sunburst.Win32Ole
+namespace Sunburst.Win32.Ole
 {
     public static class ServiceProviderHelper
     {

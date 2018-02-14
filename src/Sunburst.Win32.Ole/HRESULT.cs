@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Sunburst.Win32Ole
+namespace Sunburst.Win32.Ole
 {
     /// <summary>
     /// Contains utility methods for dealing with <c>HRESULT</c> values.

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Sunburst.Win32Ole.Interfaces
+namespace Sunburst.Win32.Ole.Interfaces
 {
     [ComImport, Guid("6d5140c1-7436-11ce-8034-00aa006009fa")]
     public interface IOleServiceProvider
