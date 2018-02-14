@@ -15,7 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst.WindowsShell.TaskD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "idl", "idl", "{97716E65-3772-4D2C-A292-F15863976702}"
 	ProjectSection(SolutionItems) = preProject
-		idl\ObjectArray.idl = idl\ObjectArray.idl
 		idl\PropIdl.Idl = idl\PropIdl.Idl
 		idl\PropIdlBase.Idl = idl\PropIdlBase.Idl
 		idl\propsys.idl = idl\propsys.idl
