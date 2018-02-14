@@ -1,12 +1,12 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 using Sunburst.Win32Ole.Interfaces;
-using Guid = System.Guid;
 
 namespace Sunburst.Win32Ole
 {
     public static class ServiceProviderHelper
     {
-        public static object QueryService(this IServiceProvider source, Guid serviceId, Guid requestedIID)
+        public static object QueryService(this IOleServiceProvider source, Guid serviceId, Guid requestedIID)
         {
             try
             {
@@ -20,7 +20,7 @@ namespace Sunburst.Win32Ole
             }
         }
 
-        public static T QueryService<T>(this IServiceProvider source, Guid serviceId)
+        public static T QueryService<T>(this IOleServiceProvider source, Guid serviceId)
         {
             return (T)QueryService(source, serviceId, typeof(T).GUID);
         }
