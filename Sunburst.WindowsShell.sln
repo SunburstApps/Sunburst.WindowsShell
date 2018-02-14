@@ -13,6 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst.WindowsShell.Appli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst.WindowsShell.TaskDialogs", "src\Sunburst.WindowsShell.TaskDialogs\Sunburst.WindowsShell.TaskDialogs.csproj", "{54C4CABA-6BCF-4834-8A41-E9B22EC9CCC8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "idl", "idl", "{97716E65-3772-4D2C-A292-F15863976702}"
+	ProjectSection(SolutionItems) = preProject
+		idl\ShObjIdl.idl = idl\ShObjIdl.idl
+		idl\ShObjIdl_core.idl = idl\ShObjIdl_core.idl
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
