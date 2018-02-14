@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Sunburst.Win32Ole.ObjectArray
+namespace Sunburst.Win32Ole.Interfaces
 {
     [ComImport, Guid("92CA9DCD-5622-4bba-A805-5E9F541BD8C9")]
     public interface IObjectArray
